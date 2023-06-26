@@ -47,7 +47,7 @@ export default function SingleBlog({ data, key, currentUser }: BlogProps) {
         </div>
 
         {data.userId === currentUser?.id && (
-          <div>
+          <div className="flex items-center gap-4 mt-4">
             <RiDeleteBin5Line
               onClick={onDelete}
               className="cursor-pointer text-[1.5rem]"
